@@ -1,18 +1,34 @@
+import { useSelector } from 'react-redux';
 import React, { useEffect } from 'react';
-import { downloadQuestions, selectQuestions } from '../../../redux/app/table';
-import { useDispatch, useSelector } from 'react-redux';
 import { isEmpty } from 'lodash';
-import { QuestionsWrapper } from './QuestionsWrapper';
+
+import { selectCurrentQuestion, selectQuestions, useTableActions } from '../../../redux/app/table';
+import { selectTeamsCount, useSettingsActions } from '../../../redux/app/settings';
+import { QuestionsWrapper } from '../QuestionsWrapper';
+import { Question } from '../Question';
+import { cn } from '../../../misc';
+import { Teams } from '../Teams';
+
+import css from './Main.module.sass';
 
 export const Main = () => {
     const questions = useSelector(selectQuestions);
-    const dispatch = useDispatch();
+    const teamsCount = useSelector(selectTeamsCount);
+    const currentQuestion = useSelector(selectCurrentQuestion);
+    const { downloadQuestions } = useTableActions();
+    const { resetTeamData } = useSettingsActions();
 
     useEffect(() => {
-        if (isEmpty(questions)) dispatch(downloadQuestions());
-    }, [questions, dispatch]);
+        downloadQuestions();
+        resetTeamData();
+    }, [downloadQuestions, resetTeamData]);
 
     if (isEmpty(questions)) return null;
 
-    return <QuestionsWrapper questions={questions} />;
+    return (
+        <>
+            {currentQuestion ? <Question /> : <QuestionsWrapper questions={questions} /> }
+            <Teams className={cn(css.Teams, 'position-absolute', teamsCount === 2 ? 'w-50' : 'w-75')} />
+        </>
+    );
 };

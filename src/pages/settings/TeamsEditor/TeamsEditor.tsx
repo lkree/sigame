@@ -1,18 +1,28 @@
+import { useCallback, useRef, useState } from 'react';
+import { Transition } from 'react-transition-group';
 import { Button, Collapse } from 'react-bootstrap';
-import { useCallback, useState } from 'react';
 
 import { Teams } from './Teams';
 
+const defaultStyle = {
+    transition: `height ${ 200 }ms ease-in-out`
+}
+
 export const TeamsEditor = () => {
-    const [open, setOpen] = useState(false);
-    const onClick = useCallback(() => setOpen(state => !state), []);
+    const [isOpen, setIsOpen] = useState(false);
+    const onClick = useCallback(() => setIsOpen(state => !state), []);
+    const ref = useRef(null);
 
     return (
         <>
-            <Button onClick={onClick}>Настройка команд</Button>
-            <Collapse in={ open }>
-                <div><Teams /></div>
-            </Collapse>
+            <Button onClick={ onClick }>Настройка команд</Button>
+            <Transition in={ isOpen } timeout={ 200 } nodeRef={ ref }>
+                <Collapse in={ isOpen }>
+                    <div ref={ ref } style={ defaultStyle }>
+                        <Teams />
+                    </div>
+                </Collapse>
+            </Transition>
         </>
     )
 };

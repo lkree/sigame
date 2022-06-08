@@ -3,6 +3,7 @@ export type Question = {
     text: string;
     payment: number;
     type: string;
+    enabled: boolean;
 }
 
 export type Questions = {

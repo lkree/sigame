@@ -7,27 +7,32 @@
           {
             "text": "test-test-test",
             "payment": 300,
-            "type": "normal"
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
             "payment": 600,
-            "type": "normal"
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
             "payment": 900,
-            "type": "normal"
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
             "payment": 1200,
-            "type": "normal"
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
             "payment": 1500,
-            "type": "normal"
+            "type": "normal",
+            "enabled": true
           }
         ]
       },
@@ -36,28 +41,33 @@
         "questions": [
           {
             "text": "test-test-test",
-            "payment": 300,
-            "type": "normal"
+            "payment": 301,
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
-            "payment": 600,
-            "type": "normal"
+            "payment": 601,
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
-            "payment": 900,
-            "type": "normal"
+            "payment": 901,
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
-            "payment": 1200,
-            "type": "normal"
+            "payment": 1201,
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
-            "payment": 1500,
-            "type": "normal"
+            "payment": 1501,
+            "type": "normal",
+            "enabled": true
           }
         ]
       },
@@ -66,28 +76,33 @@
         "questions": [
           {
             "text": "test-test-test",
-            "payment": 300,
-            "type": "normal"
+            "payment": 302,
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
-            "payment": 600,
-            "type": "normal"
+            "payment": 602,
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
-            "payment": 900,
-            "type": "normal"
+            "payment": 902,
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
-            "payment": 1200,
-            "type": "normal"
+            "payment": 1202,
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
-            "payment": 1500,
-            "type": "normal"
+            "payment": 1502,
+            "type": "normal",
+            "enabled": true
           }
         ]
       },
@@ -96,28 +111,33 @@
         "questions": [
           {
             "text": "test-test-test",
-            "payment": 300,
-            "type": "normal"
+            "payment": 303,
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
-            "payment": 600,
-            "type": "normal"
+            "payment": 603,
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
-            "payment": 900,
-            "type": "normal"
+            "payment": 903,
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
-            "payment": 1200,
-            "type": "normal"
+            "payment": 1203,
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
-            "payment": 1500,
-            "type": "normal"
+            "payment": 1503,
+            "type": "normal",
+            "enabled": true
           }
         ]
       },
@@ -126,28 +146,33 @@
         "questions": [
           {
             "text": "test-test-test",
-            "payment": 300,
-            "type": "normal"
+            "payment": 304,
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
-            "payment": 600,
-            "type": "normal"
+            "payment": 604,
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
-            "payment": 900,
-            "type": "normal"
+            "payment": 904,
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
-            "payment": 1200,
-            "type": "normal"
+            "payment": 1204,
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
-            "payment": 1500,
-            "type": "normal"
+            "payment": 1504,
+            "type": "normal",
+            "enabled": true
           }
         ]
       },
@@ -156,28 +181,33 @@
         "questions": [
           {
             "text": "test-test-test",
-            "payment": 300,
-            "type": "normal"
+            "payment": 305,
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
-            "payment": 600,
-            "type": "normal"
+            "payment": 605,
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
-            "payment": 900,
-            "type": "normal"
+            "payment": 905,
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
-            "payment": 1200,
-            "type": "normal"
+            "payment": 1205,
+            "type": "normal",
+            "enabled": true
           },
           {
             "text": "test-test-test",
-            "payment": 1500,
-            "type": "normal"
+            "payment": 1505,
+            "type": "normal",
+            "enabled": true
           }
         ]
       }
